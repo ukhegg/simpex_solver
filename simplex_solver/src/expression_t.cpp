@@ -1,5 +1,5 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
 
 #include "simplex_solver/expression_t.hpp"
@@ -126,7 +126,7 @@ namespace simplex_solver {
         return result;
     }
 
-    expression_t simplex_solver::operator*(double d, const variable_t &var) {
+    expression_t operator*(double d, const variable_t &var) {
         expression_t result = var;
         result *= d;
         return result;

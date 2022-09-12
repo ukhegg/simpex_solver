@@ -1,8 +1,8 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
 
-#include <catch2/catch_all.hpp>
+#include <catch2/catch.hpp>
 #include <simplex_solver/expression_t.hpp>
 
 
@@ -121,7 +121,7 @@ namespace simplex_solver::tests {
             }
 
             GIVEN("some expression") {
-                variable_t a_var = "a";
+                variable_t a_var("a");
                 expression_t expr = a_var + 10;
                 REQUIRE(expr[a_var] == 1);
                 REQUIRE(expr.free_member() == 10);
@@ -201,10 +201,10 @@ namespace simplex_solver::tests {
             }
 
             GIVEN("some expression and variable") {
-                variable_t a_var = "a";
+                variable_t a_var("a");
                 expression_t expr = a_var + 10;
 
-                variable_t b_var = "b";
+                variable_t b_var("b");
                 WHEN("adding new variable to expression") {
                     auto res = expr + b_var;
                     THEN("result is expression") {
@@ -253,9 +253,9 @@ namespace simplex_solver::tests {
             }
 
             GIVEN("lhs and rhs expressions") {
-                variable_t a_var = "a";
-                variable_t b_var = "b";
-                variable_t c_var = "c";
+                variable_t a_var("a");
+                variable_t b_var("b");
+                variable_t c_var("c");
 
                 auto lhs = a_var + 5 * b_var + 5;
                 auto rhs = b_var - 4 * c_var - 1;

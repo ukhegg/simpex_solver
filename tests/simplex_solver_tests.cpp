@@ -1,9 +1,9 @@
 //
-// Created by DerKunde on 22-Apr-22.
+// Created by ukhegg on 22-Apr-22.
 //
 
 #include <simplex_solver/simplex_solver_t.hpp>
-#include <catch2/catch_all.hpp>
+#include <catch2/catch.hpp>
 
 namespace simplex_solver::tests
 {

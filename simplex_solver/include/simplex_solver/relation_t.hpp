@@ -1,10 +1,8 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
 
-#ifndef SIMPLEX_SOLVER_RELATION_T_HPP
-#define SIMPLEX_SOLVER_RELATION_T_HPP
-
+#pragma once
 #include "simplex_solver/expression_t.hpp"
 
 namespace simplex_solver
@@ -78,5 +76,3 @@ namespace simplex_solver
 	}
 }
 
-
-#endif //SIMPLEX_SOLVER_RELATION_T_HPP

@@ -1,10 +1,7 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
-
-#ifndef SIMPLEX_SOLVER_VARIABLE_T_HPP
-#define SIMPLEX_SOLVER_VARIABLE_T_HPP
-
+#pragma once
 #include <string>
 #include "simplex_solver/simplex_solver_api.hpp"
 
@@ -13,7 +10,7 @@ namespace simplex_solver {
     public:
         variable_t() = default;
 
-        variable_t(const std::string &name);
+        explicit variable_t(const std::string &name);
 
         [[nodiscard]] std::string_view name() const;
 
@@ -33,6 +30,3 @@ namespace simplex_solver {
     };
 
 }
-
-
-#endif //SIMPLEX_SOLVER_VARIABLE_T_HPP

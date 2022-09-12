@@ -1,8 +1,8 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
 
-#include <catch2/catch_all.hpp>
+#include <catch2/catch.hpp>
 #include <simplex_solver/relation_t.hpp>
 
 namespace simplex_solver::tests {

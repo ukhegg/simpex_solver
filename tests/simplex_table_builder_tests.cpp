@@ -1,12 +1,14 @@
 //
-// Created by DerKunde on 22-Apr-22.
+// Created by ukhegg on 22-Apr-22.
 //
 
+#include <catch2/catch.hpp>
 #include <simplex_solver/simplex_table_builder.hpp>
-#include <catch2/catch_all.hpp>
 
 namespace simplex_solver::tests
 {
+    using namespace simplex_solver;
+
 	TEST_CASE("simplex_table_builder_t tests")
 	{
 		std::vector<std::string> expected_outputs =

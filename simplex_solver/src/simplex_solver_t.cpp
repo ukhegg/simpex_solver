@@ -1,5 +1,5 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
 
 #include "simplex_solver/simplex_solver_t.hpp"
@@ -23,7 +23,7 @@ namespace simplex_solver
 
 			auto add_additional_basis_var = [&](expression_t const& expr)
 			{
-				const variable_t addition_var = {"additional_var #" + std::to_string(additional_variables.size())};
+				const variable_t addition_var("additional_var #" + std::to_string(additional_variables.size()));
 				additional_variables.push_back(addition_var);
 				table_builder.register_basis_variable(addition_var, expr);
 			};

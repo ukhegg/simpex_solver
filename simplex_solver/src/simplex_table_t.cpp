@@ -1,12 +1,12 @@
 //
-// Created by DerKunde on 22-Apr-22.
+// Created by ukhegg on 22-Apr-22.
 //
 
 #include "simplex_solver/simplex_table_t.hpp"
 #include <sstream>
 #include <algorithm>
 #include <iomanip>
-
+#include <limits>
 namespace simplex_solver
 {
 	using namespace std::string_literals;

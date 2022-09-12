@@ -1,9 +1,8 @@
 //
-// Created by DerKunde on 25-Apr-22.
+// Created by ukhegg on 25-Apr-22.
 //
 
-#ifndef SIMPLEX_SOLVER_SIMPLE_TABLE_WITH_DATA_T_HPP
-#define SIMPLEX_SOLVER_SIMPLE_TABLE_WITH_DATA_T_HPP
+#pragma once
 #include <stdexcept>
 #include <functional>
 #include "simplex_solver/simplex_table_t.hpp"
@@ -302,6 +301,3 @@ namespace simplex_solver
 		}
 	};
 }
-
-
-#endif //SIMPLEX_SOLVER_SIMPLE_TABLE_WITH_DATA_T_HPP

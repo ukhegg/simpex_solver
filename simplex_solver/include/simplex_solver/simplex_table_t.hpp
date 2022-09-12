@@ -1,10 +1,8 @@
 //
-// Created by DerKunde on 22-Apr-22.
+// Created by ukhegg on 22-Apr-22.
 //
 
-#ifndef SIMPLEX_SOLVER_SIMPLEX_TABLE_T_HPP
-#define SIMPLEX_SOLVER_SIMPLEX_TABLE_T_HPP
-
+#pragma once
 #include <vector>
 #include <map>
 #include <optional>
@@ -202,6 +200,3 @@ namespace simplex_solver
 
 	};
 }
-
-
-#endif //SIMPLEX_SOLVER_SIMPLEX_TABLE_T_HPP

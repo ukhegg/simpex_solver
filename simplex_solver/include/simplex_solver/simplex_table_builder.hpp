@@ -1,9 +1,8 @@
 //
-// Created by DerKunde on 22-Apr-22.
+// Created by ukhegg on 22-Apr-22.
 //
 
-#ifndef SIMPLEX_SOLVER_SIMPLEX_TABLE_BUILDER_HPP
-#define SIMPLEX_SOLVER_SIMPLEX_TABLE_BUILDER_HPP
+#pragma once
 #include <map>
 #include <set>
 
@@ -31,4 +30,3 @@ namespace simplex_solver
 }
 
 
-#endif //SIMPLEX_SOLVER_SIMPLEX_TABLE_BUILDER_HPP

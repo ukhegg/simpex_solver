@@ -1,5 +1,5 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
 
 #include "simplex_solver/variable_t.hpp"

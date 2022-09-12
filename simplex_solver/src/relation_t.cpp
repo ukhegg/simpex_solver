@@ -1,5 +1,5 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
 
 #include "simplex_solver/relation_t.hpp"
@@ -40,7 +40,7 @@ namespace simplex_solver {
         return {this->expr_.replace(var, expr), this->rel_, this->value_};
     }
 
-    std::ostream &simplex_solver::operator<<(std::ostream &os, relation_t::relation_type_t rel) {
+    std::ostream &operator<<(std::ostream &os, relation_t::relation_type_t rel) {
         switch (rel) {
             case relation_t::relation_type_t::less_or_equal:
                 return os << "<=";

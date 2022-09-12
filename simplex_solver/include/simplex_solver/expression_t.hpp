@@ -1,9 +1,8 @@
 //
-// Created by DerKunde on 21-Apr-22.
+// Created by ukhegg on 21-Apr-22.
 //
 
-#ifndef SIMPLEX_SOLVER_EXPRESSION_T_HPP
-#define SIMPLEX_SOLVER_EXPRESSION_T_HPP
+#pragma once
 
 #include <map>
 #include <vector>
@@ -133,7 +132,78 @@ namespace simplex_solver
 		double free_member_{0};
 		std::map<variable_t, double> variables_;
 	};
+
+#pragma region unary operators
+
+    expression_t operator-(variable_t const& var);
+
+    expression_t operator-(expression_t const& expr);
+
+#pragma endregion
+
+#pragma region variable+const pair
+
+    expression_t operator+(variable_t const& var, double d);
+
+    expression_t operator+(double d, variable_t const& var);
+
+    expression_t operator-(variable_t const& var, double d);
+
+    expression_t operator-(double d, variable_t const& var);
+
+    expression_t operator*(variable_t const& var, double d);
+
+    expression_t operator*(double d, variable_t const& var);
+
+    expression_t operator/(variable_t const& var, double d);
+
+#pragma endregion
+
+#pragma region variable + variable pair
+
+    expression_t operator+(variable_t const& lhs, variable_t const& rhs);
+
+    expression_t operator-(variable_t const& lhs, variable_t const& rhs);
+
+#pragma endregion
+
+#pragma region expression + const pair
+
+    expression_t operator+(expression_t const& expr, double d);
+
+    expression_t operator+(double d, expression_t const& expr);
+
+    expression_t operator-(expression_t const& expr, double d);
+
+    expression_t operator-(double d, expression_t const& expr);
+
+    expression_t operator*(expression_t const& expr, double d);
+
+    expression_t operator*(double d, expression_t const& expr);
+
+    expression_t operator/(expression_t const& expr, double d);
+
+#pragma endregion
+
+#pragma region expression + variable pair
+
+    expression_t operator+(expression_t const& expr, variable_t const& var);
+
+    expression_t operator+(variable_t const& var, expression_t const& expr);
+
+    expression_t operator-(expression_t const& expr, variable_t const& var);
+
+    expression_t operator-(variable_t const& var, expression_t const& expr);
+
+#pragma endregion
+
+#pragma region expression + expression pair
+
+    expression_t operator+(expression_t const& lhs, expression_t const& rhs);
+
+    expression_t operator-(expression_t const& lhs, expression_t const& rhs);
+
+#pragma endregion
 }
 
 
-#endif //SIMPLEX_SOLVER_EXPRESSION_T_HPP
