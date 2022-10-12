@@ -3,7 +3,7 @@
 //
 
 #include <simplex_solver/variable_t.hpp>
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 
 
 namespace simplex_solver::tests

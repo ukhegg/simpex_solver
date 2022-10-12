@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.10)
 project(simplex_solver_tests)
 
 set(CMAKE_CXX_STANDARD 17)
-find_package(Catch2 REQUIRED)
-
+#find_package(Catch2 REQUIRED)
+FetchContent_MakeAvailable(catch)
 FetchContent_MakeAvailable(fakeit)
 
 set(SOURCE_FILES
@@ -18,6 +18,7 @@ source_group(TREE ${PROJECT_SOURCE_DIR} FILES ${SOURCE_FILES})
 
 target_include_directories(simplex_solver_tests
         PRIVATE ${simplex_solver_SOURCE_DIR}/include
+        ${catch_SOURCE_DIR}/src
         )
 
 target_link_libraries(simplex_solver_tests

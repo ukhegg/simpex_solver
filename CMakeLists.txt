@@ -6,6 +6,9 @@ set(CMAKE_CXX_STANDARD 14)
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
 include(FetchContent)
+FetchContent_Declare(catch
+        GIT_REPOSITORY https://github.com/catchorg/Catch2.git
+        GIT_TAG v3.1.0)
 FetchContent_Declare(fakeit
         GIT_REPOSITORY https://github.com/eranpeer/FakeIt.git
         GIT_TAG 2.3.0)

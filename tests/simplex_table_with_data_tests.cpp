@@ -2,7 +2,7 @@
 // Created by ukhegg on 25-Apr-22.
 //
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <simplex_solver/simple_table_with_data_t.hpp>
 #include <simplex_solver/variable_t.hpp>
 

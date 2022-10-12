@@ -2,7 +2,7 @@
 // Created by ukhegg on 22-Apr-22.
 //
 
-#include <catch2/catch.hpp>
+#include <catch2/catch_all.hpp>
 #include <simplex_solver/simplex_table_builder.hpp>
 
 namespace simplex_solver::tests
